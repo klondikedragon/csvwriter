@@ -4,6 +4,7 @@ import 'dart:convert';
 import '_sink_wrapper.dart';
 
 import '_sink_wrapper_stub.dart'
+    if (dart.library.js_interop) '_sink_wrapper_impl_browser.dart'
     if (dart.library.js) '_sink_wrapper_impl_browser.dart'
     if (dart.library.html) '_sink_wrapper_impl_browser.dart'
     if (dart.library.io) '_sink_wrapper_impl_vm.dart';
